@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NhietDo</title>
+</head>
+<body>
+<script>
+function Temperature(C){
+    this.C = C;
+
+    this.getF = function (){
+        let F = (9/5)*C + 32;
+        return F;
+    }
+    this.getK = function (){
+        let K = C + 273.15;
+        return K;
+    }
+}
+let C1 = new Temperature(25);
+let F = C1.getF();
+let K = C1.getK();
+alert('độ F: ' + F + ' độ Kenvin: ' + K);
+</script>
+</body>
+</html>
